@@ -3,8 +3,8 @@ import airflow
 from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 
-from .src.preprocess import preprocess
-from .src.train import train_model
+from src.preprocess import preprocess
+from src.train import train_model
 
 INITIAL_MODEL_PATH = "/models/current_model/initial_model.H5"
 
