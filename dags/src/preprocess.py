@@ -3,7 +3,7 @@ import pandas as pd
 def preprocess(**kwargs):
     # Read movement data, this could be from several locations like S3 buckets
     # This is an initial training
-    movements = pd.read_csv("../../data/SmartMovementExport.csv")
+    movements = pd.read_csv("../../../data/SmartMovementExport.csv")
 
     # Create training and validation set
     val_dataframe = movements.sample(frac=0.2, random_state=1337)
